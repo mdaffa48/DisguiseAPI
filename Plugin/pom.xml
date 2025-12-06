@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>Plugin</artifactId>
-    <version>1.4.0</version>
+    <version>${project.parent.version}</version>
 
     <profiles>
         <profile>
@@ -65,7 +65,7 @@
                         <relocation>
                             <pattern>org.bstats</pattern>
                             <!-- Replace this with your package! -->
-                            <shadedPattern>net.pinger.disguise.bstats</shadedPattern>
+                            <shadedPattern>${project.parent.groupId}.bstats</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>
@@ -91,10 +91,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>API</artifactId>
-            <version>1.4.0</version>
-            <scope>compile</scope>
+            <version>${project.parent.version}</version>
         </dependency>
 
         <!-- Random Spigot Version -->
@@ -115,209 +114,209 @@
 
         <!-- 1.8.8 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.8.8</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.9.4 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.9.4</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.10 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.10</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.11 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.11</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.12 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.12</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.13 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.13</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.13.1 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.13.1</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.14 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.14</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.15 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.15</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.16.1 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.16.1</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.16.2 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.16.2</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.16.4 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.16.4</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.17 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.17</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.17.1 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.17.1</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.18 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.18</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.18.2 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.18.2</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.19 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.19</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.19.1 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.19.1</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.19.3 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.19.3</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.19.4 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.19.4</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.20 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.20</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.20.2 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.20.2</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.20.3 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.20.3</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.20.6 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.20.6</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.21 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.21</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <!-- 1.21.3 Provider -->
         <dependency>
-            <groupId>net.pinger.disguise</groupId>
+            <groupId>${project.parent.groupId}</groupId>
             <artifactId>v1.21.3</artifactId>
-            <version>1.4.0</version>
+            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

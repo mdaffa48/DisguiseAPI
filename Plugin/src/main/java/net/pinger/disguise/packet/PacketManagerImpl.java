@@ -73,6 +73,9 @@ public class PacketManagerImpl implements PacketManager {
                     continue;
                 }
 
+                System.out.println("MinecraftServer.CURRENT.getVersion() = " + MinecraftServer.CURRENT.getVersion());
+                System.out.println("packetHandler.version() = " + packetHandler.version());
+
                 // Check if the main version which this handler was built upon
                 // Is equal to the server version
                 // If not, check its compatibility and do the same
