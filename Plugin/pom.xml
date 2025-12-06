@@ -319,5 +319,13 @@
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
+
+        <!-- 1.21.8 Provider -->
+        <dependency>
+            <groupId>${project.parent.groupId}</groupId>
+            <artifactId>v1.21.8</artifactId>
+            <version>${project.parent.version}</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 </project>

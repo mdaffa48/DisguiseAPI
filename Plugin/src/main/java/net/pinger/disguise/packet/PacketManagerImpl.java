@@ -23,32 +23,33 @@ public class PacketManagerImpl implements PacketManager {
 
         // Add default providers here
         this.registeredProviders.addAll(Arrays.asList(
-            net.pinger.disguise.packet.v1_8_8.PacketProviderImpl.class, // 1.8.8
-            net.pinger.disguise.packet.v1_9_4.PacketProviderImpl.class, // 1.9.4
-            net.pinger.disguise.packet.v1_10.PacketProviderImpl.class, // 1.10
-            net.pinger.disguise.packet.v1_11.PacketProviderImpl.class, // 1.11
-            net.pinger.disguise.packet.v1_12.PacketProviderImpl.class, // 1.12
-            net.pinger.disguise.packet.v1_13.PacketProviderImpl.class, // 1.13
-            net.pinger.disguise.packet.v1_13_1.PacketProviderImpl.class, // 1.13.1
-            net.pinger.disguise.packet.v1_14.PacketProviderImpl.class, // 1.14
-            net.pinger.disguise.packet.v1_15.PacketProviderImpl.class, // 1.15
-            net.pinger.disguise.packet.v1_16_1.PacketProviderImpl.class, // 1.16.1
-            net.pinger.disguise.packet.v1_16_2.PacketProviderImpl.class, // 1.16.2
-            net.pinger.disguise.packet.v1_16_4.PacketProviderImpl.class, // 1.16.4
-            net.pinger.disguise.packet.v1_17.PacketProviderImpl.class, // 1.17
-            net.pinger.disguise.packet.v1_17_1.PacketProviderImpl.class, // 1.17.1
-            net.pinger.disguise.packet.v1_18.PacketProviderImpl.class, // 1.18
-            net.pinger.disguise.packet.v1_18_2.PacketProviderImpl.class, // 1.18.2
-            net.pinger.disguise.packet.v1_19.PacketProviderImpl.class, // 1.19
-            net.pinger.disguise.packet.v1_19_1.PacketProviderImpl.class, // 1.19.1 and 1.19.2
-            net.pinger.disguise.packet.v1_19_3.PacketProviderImpl.class, // 1.19.3
-            net.pinger.disguise.packet.v1_19_4.PacketProviderImpl.class, // 1.19.4
-            net.pinger.disguise.packet.v1_20.PacketProviderImpl.class, // 1.20+
-            net.pinger.disguise.packet.v1_20_2.PacketProviderImpl.class, // 1.20.2
-            net.pinger.disguise.packet.v1_20_3.PacketProviderImpl.class, // 1.20.3
-            net.pinger.disguise.packet.v1_20_6.PacketProviderImpl.class, // 1.20.6
-            net.pinger.disguise.packet.v1_21.PacketProviderImpl.class, // 1.21
-            net.pinger.disguise.packet.v1_21_3.PacketProviderImpl.class // 1.21.3
+                net.pinger.disguise.packet.v1_8_8.PacketProviderImpl.class, // 1.8.8
+                net.pinger.disguise.packet.v1_9_4.PacketProviderImpl.class, // 1.9.4
+                net.pinger.disguise.packet.v1_10.PacketProviderImpl.class, // 1.10
+                net.pinger.disguise.packet.v1_11.PacketProviderImpl.class, // 1.11
+                net.pinger.disguise.packet.v1_12.PacketProviderImpl.class, // 1.12
+                net.pinger.disguise.packet.v1_13.PacketProviderImpl.class, // 1.13
+                net.pinger.disguise.packet.v1_13_1.PacketProviderImpl.class, // 1.13.1
+                net.pinger.disguise.packet.v1_14.PacketProviderImpl.class, // 1.14
+                net.pinger.disguise.packet.v1_15.PacketProviderImpl.class, // 1.15
+                net.pinger.disguise.packet.v1_16_1.PacketProviderImpl.class, // 1.16.1
+                net.pinger.disguise.packet.v1_16_2.PacketProviderImpl.class, // 1.16.2
+                net.pinger.disguise.packet.v1_16_4.PacketProviderImpl.class, // 1.16.4
+                net.pinger.disguise.packet.v1_17.PacketProviderImpl.class, // 1.17
+                net.pinger.disguise.packet.v1_17_1.PacketProviderImpl.class, // 1.17.1
+                net.pinger.disguise.packet.v1_18.PacketProviderImpl.class, // 1.18
+                net.pinger.disguise.packet.v1_18_2.PacketProviderImpl.class, // 1.18.2
+                net.pinger.disguise.packet.v1_19.PacketProviderImpl.class, // 1.19
+                net.pinger.disguise.packet.v1_19_1.PacketProviderImpl.class, // 1.19.1 and 1.19.2
+                net.pinger.disguise.packet.v1_19_3.PacketProviderImpl.class, // 1.19.3
+                net.pinger.disguise.packet.v1_19_4.PacketProviderImpl.class, // 1.19.4
+                net.pinger.disguise.packet.v1_20.PacketProviderImpl.class, // 1.20+
+                net.pinger.disguise.packet.v1_20_2.PacketProviderImpl.class, // 1.20.2
+                net.pinger.disguise.packet.v1_20_3.PacketProviderImpl.class, // 1.20.3
+                net.pinger.disguise.packet.v1_20_6.PacketProviderImpl.class, // 1.20.6
+                net.pinger.disguise.packet.v1_21.PacketProviderImpl.class, // 1.21
+                net.pinger.disguise.packet.v1_21_3.PacketProviderImpl.class, // 1.21.3
+                net.pinger.disguise.packet.v1_21_8.PacketProviderImpl.class // 1.21.8
         ));
     }
 
@@ -72,9 +73,6 @@ public class PacketManagerImpl implements PacketManager {
                 if (packetHandler == null) {
                     continue;
                 }
-
-                System.out.println("MinecraftServer.CURRENT.getVersion() = " + MinecraftServer.CURRENT.getVersion());
-                System.out.println("packetHandler.version() = " + packetHandler.version());
 
                 // Check if the main version which this handler was built upon
                 // Is equal to the server version
