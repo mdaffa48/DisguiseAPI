@@ -113,7 +113,7 @@ public class PacketProviderImpl implements PacketProvider {
 
         if (this.plugin.isEnabled()) {
             Bukkit.getScheduler().runTask(this.plugin, () -> {
-                PlayerList playerList = sp.server.getPlayerList();
+                PlayerList playerList = level.getServer().getPlayerList();
                 playerList.sendPlayerPermissionLevel(sp);
                 playerList.sendLevelInfo(sp, level);
                 playerList.sendAllPlayerInfo(sp);
